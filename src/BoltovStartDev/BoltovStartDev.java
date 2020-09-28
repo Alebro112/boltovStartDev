@@ -3,23 +3,23 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package startdev;
+package BoltovStartDev;
+
+import java.util.Scanner;
 
 /**
  *
  * @author user
  */
-public class StartDev {
+public class BoltovStartDev {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-       Task1 task1 = new Task1();
-       task1.run();
+       App app = new App();
+       app.run();
+        
        
-       Task2 task2 = new Task2();
-       task2.run();
-    }
-    
+    } 
 }

@@ -3,7 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package startdev;
+package BoltovStartDev;
+
+import java.util.Scanner;
 
 /**
  *
@@ -13,11 +15,17 @@ public class Task2 {
     public void run(){
         System.out.println("----- Задача 2 ------");
         System.out.println("Загадано число от 5 до 10: ");
-        
+        int randomNumber = (int) (5 + Math.random() * 10);
         System.out.println("Отгадай: ");
+        Scanner scanner = new Scanner(System.in);
+        int userNumber = scanner.nextInt();
         
-        System.out.println("Ты выиграл");
-        System.out.println("Ты ты проиграл");
+        if (randomNumber == userNumber){
+            System.out.println("Ты выиграл");
+            return;
+        } else {
+            System.out.println("Ты проиграл");
+        }
         System.out.println("----- конец задачи 2 ------");
     }
    
